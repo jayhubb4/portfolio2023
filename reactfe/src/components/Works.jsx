@@ -4,10 +4,18 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { github } from '../assets';
 import { SectionWrapper } from '../hoc';
-import { projects } from '../constants';
+//import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
-import { client } from '../utils/client';
+import { urlFor, client } from '../utils/client';
 
+useEffect(() => {
+  const [projects, setProjects] = useState([]);
+  const query = '*[_type == "projects"]';
+
+  client.fetch(query).then((data) => {
+    setProjects(data);
+  });
+}, []);
 
 
 const ProjectCard = ({ index, name, description, image, tags, source_code_link }) => {
@@ -25,8 +33,8 @@ const ProjectCard = ({ index, name, description, image, tags, source_code_link }
       >
         <div className='relative w-full h-[230px]'>
           <img 
-            src={image}
-            alt={name}
+            src={urlFor(projects.imgUrl)}
+            alt={projects.name}
             className='w-full h-full object-cover rounded-2xl'
           />
 
