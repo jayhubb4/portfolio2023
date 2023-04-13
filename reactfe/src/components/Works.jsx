@@ -54,15 +54,16 @@ const Projects = () => {
                     className='w-1/2 h-1/2 object-contain'
                   />
                 </div>
-                {/*<div THIS DIV WILL BE FOR THE URL!!!
-                  onClick={() => window.open(source_code_link, "blank")}
+                <div 
+                  onClick={() => window.open(project.projectLink, "blank")}
                   className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
                 >
                   <img 
-                    src={github} 
-                    alt="github"
-                    className='w-1/2 h-1/2 object-contain' />
-                </div>*/}
+                    src={projectlink} 
+                    alt="projectlink"
+                    className='w-1/2 h-1/2 object-contain'
+                  />
+                </div>
               </div>
             </div>
           
@@ -109,13 +110,13 @@ const Works = () => {
       </div>
 
       <div className='mt-20 flex flex-wrap gap-7'>
-        {projects.map((project, index) => (
+
           <Projects 
             key={`project-${index}`}
             {...project}
             index={index}
           />
-        ))}
+
       </div>
     </>
   )  
