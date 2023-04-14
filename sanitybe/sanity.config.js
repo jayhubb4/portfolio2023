@@ -2,6 +2,7 @@ import {defineConfig} from 'sanity'
 import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
+import { colorInput } from '@sanity/color-input';
 
 const projectId = import.meta.VITE_APP_SANITY_ID;
 
@@ -13,7 +14,11 @@ export default defineConfig({
   projectId: 'api8ljjp',
   dataset: 'production',
 
-  plugins: [deskTool(), visionTool()],
+  plugins: [
+      deskTool(), 
+      visionTool(),
+      colorInput()
+    ],
 
   schema: {
     types: schemaTypes,
