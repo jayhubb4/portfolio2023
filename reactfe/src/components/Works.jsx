@@ -17,8 +17,10 @@ const Projects = () => {
   
     client.fetch(query).then((data) => {
       setProjects(data);
-    });
+    })
   }, []);
+
+  const TagColors = [ 'blue-text-gradient', 'green-text-gradient', 'pink-text-gradient'];
 
 
 
@@ -78,7 +80,7 @@ const Projects = () => {
           <div className='mt-4 flex flex-wrap gap-2'>
               <p 
                 key={index} 
-                className={`text-[14px] blue-text-gradient`}
+                className={`text-[14px] green-text-gradient`}
               >
                 {project.tags} 
               </p>
@@ -112,9 +114,7 @@ const Works = () => {
 
       <div className='mt-20 flex flex-wrap gap-7'>
 
-          <Projects 
-            
-          />
+          <Projects />
       </div>
     </>
   )  

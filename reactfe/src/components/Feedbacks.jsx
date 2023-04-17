@@ -4,6 +4,19 @@ import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant } from '../utils/motion';
 import { testimonials } from '../constants';
+import { urlFor, client } from '../utils/client';
+
+
+const Testimonials = () => {
+  const [testimonial, setTestimonial] = useState([]);
+  
+  useEffect(() => {  
+    const query = '*[_type == "testimonials"]';
+  
+    client.fetch(query).then((data) => {
+      setTestimonial(data);
+    })
+  }, []);
 
 
 const FeedbackCard = ({index, testimonial, name, designation, company, image}) => (
