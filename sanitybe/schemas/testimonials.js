@@ -14,6 +14,11 @@ export default {
             type:'string'
         },
         {
+            name:'position',
+            title:'Position',
+            type:'string'
+        },
+        {
             name:'imgurl',
             title:'ImgUrl',
             type: 'image',
