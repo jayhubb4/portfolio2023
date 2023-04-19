@@ -7,7 +7,7 @@ import { SectionWrapper } from '../hoc';
 //import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { urlFor, client } from '../utils/client';
-import projects from '../../../sanitybe/schemas/projects';
+//import projects from '../../../sanitybe/schemas/projects';
 
 
 const Projects = () => {
@@ -116,7 +116,7 @@ const Works = () => {
       <div className='mt-20 flex flex-wrap gap-7'>
 
           <Projects
-            key={projects}
+            
           />
       </div>
     </>
