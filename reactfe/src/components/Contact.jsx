@@ -107,11 +107,14 @@ const Contact = () => {
           </label>
 
           <button
-            className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl' 
+            className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl flex'
             type='submit'
           >
             {loading ? 'Sending...' : 'Send'}
           </button>
+
+          <p className={styles.sectionSubText}>(This form actually works lol)</p>
+        
         </form>
       </motion.div>
 

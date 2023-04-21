@@ -23,6 +23,8 @@ import {
     jobit,
     tripguide,
     threejs,
+    softwear,
+    mylogo,
   } from "../assets";
   
   export const navLinks = [
@@ -115,7 +117,7 @@ import {
   ];
   
   const experiences = [
-    {
+    /*{
       title: "React.js Developer",
       company_name: "Starbucks",
       icon: starbucks,
@@ -140,31 +142,33 @@ import {
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
-    },
+    },*/
     {
       title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      company_name: "dotcom",
+      icon: mylogo,
+      iconBg: "#fff",
+      date: "Jan 2022 - Current",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
+        "Built various applications catering to all clients' needs with a 100% satisfaction rate.",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      title: "Software Engineer",
+      company_name: "SoftWear Automation",
+      icon: softwear,
+      iconBg: "#fff",
+      date: "July 2021 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Developing and maintaining responsive web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Developed automated machine paths and functions using TwinCAT's technology for PLC logic and Python/C++ for custom scripts. ",
         "Participating in code reviews and providing constructive feedback to other developers.",
+        "Built complex web-based UI for operators with varying permissions based on user profile.",
       ],
     },
   ];
