@@ -145,20 +145,6 @@ import {
       ],
     },*/
     {
-      title: "Web Developer",
-      company_name: "dotcom",
-      icon: mylogo,
-      iconBg: "#fff",
-      date: "January 2022 - Current",
-      points: [
-        "Develop and maintain web applications using React.js and other related technologies.",
-        "Collaborate with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implement responsive design and ensuring cross-browser compatibility.",
-        "Participate in code reviews and providing constructive feedback to other developers.",
-        "Built various applications catering to all clients' needs with a 100% satisfaction rate.",
-      ],
-    },
-    {
       title: "Software Engineer",
       company_name: "SoftWear Automation",
       icon: softwear,
@@ -170,6 +156,20 @@ import {
         "Developed automated machine paths and functions using TwinCAT's technology for PLC logic and Python/C++ for custom scripts. ",
         "Participated in code reviews and providing constructive feedback to other developers.",
         "Built complex web-based UI for operators with varying permissions based on user profile.",
+      ],
+    },
+    {
+      title: "Web Developer",
+      company_name: "dotcom",
+      icon: mylogo,
+      iconBg: "#fff",
+      date: "January 2022 - Current",
+      points: [
+        "Develop and maintain web applications using React.js and other related technologies.",
+        "Collaborate with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Implement responsive design and ensuring cross-browser compatibility.",
+        "Participate in code reviews and providing constructive feedback to other developers.",
+        "Built various applications catering to all clients' needs with a 100% satisfaction rate.",
       ],
     },
     {
